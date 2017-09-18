@@ -39,7 +39,6 @@ $('#jnLine').jnLine();
 			<th style="width: 100px;">Name</th>
 			<th style="width: 100px;">type</th>
 			<th style="width: 50px;">default</th>
-			<th>description</th>
 		</tr>
 	</thead>
 	<tbody>
