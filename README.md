@@ -15,7 +15,7 @@ Download package and include `jquery.jnLine.min.js` in your document after inclu
 
 ## Usage
 
-You need a SVG Element in your HTML
+You need an empty SVG Element in your HTML
 ```html
 <svg id="jnLine" xmlns="http://www.w3.org/2000/svg"></svg>
 ```
