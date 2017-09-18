@@ -10,7 +10,7 @@
         var settings = $.extend({
             svgId: 'jnLine',
             strokeColor: "#000",
-            strokeWidht: 2,
+            strokeWidth: 2,
             animateTime: 1000,
             interval: 600,
             fadeOutTime: 800,
@@ -41,7 +41,7 @@
             line.setAttributeNS(null, 'y1', y1);
             line.setAttributeNS(null, 'x2', x2);
             line.setAttributeNS(null, 'y2', y2);
-            line.setAttributeNS(null, 'stroke-width', settings.strokeWidht);
+            line.setAttributeNS(null, 'stroke-width', settings.strokeWidth);
             line.setAttributeNS(null, 'stroke', settings.strokeColor);
             line.setAttributeNS(null, 'class', "line off");
             if (settings.motionBlur === true) {
