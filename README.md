@@ -5,7 +5,7 @@ Generate random svg Lines
 
 ## Installation
 
-Download package or install with Bower and include `parallax.min.js` in your document after including jQuery.
+Download package or install with Bower and include `jnLine.min.js` in your document after including jQuery.
 
 ```bash
 $ bower i --save jnLine.js
