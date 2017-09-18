@@ -1,5 +1,8 @@
-// jquery.jnLine.js
-// author: Jonas Nickel
+/*!
+ * jnLine.js v1.0.0 (http://github.com/jonasnickel/jnLine)
+ * @copyright Jonas Nickel
+ * @license GNU (http://github.com/jonasnickel/jnLine/blob/master/LICENSE)
+ */
 (function ($) {
     $.fn.jnLine = function (options) {
         var viewportwidth = this.width(),
