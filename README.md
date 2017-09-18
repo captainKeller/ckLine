@@ -89,5 +89,10 @@ $('#jnLine').jnLine();
 			<td>string</td>
 			<td>swing</td>
 		</tr>
+		<tr>
+			<td>leftRight</td>
+			<td>boolean</td>
+			<td>true</td>
+		</tr>
 	</tbody>
 </table>
