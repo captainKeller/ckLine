@@ -17,7 +17,7 @@
             lifeTime: 2000,
             width: viewportwidth,
             height: viewportHeight,
-            leftRight: true,
+            leftRight: false,
             easing: 'swing',
         }, options);
 
