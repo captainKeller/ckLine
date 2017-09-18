@@ -1,7 +1,7 @@
 JnLine.js
 ===========
 
-Generate random svg Lines
+Generates random svg Lines
 
 ## Installation
 
