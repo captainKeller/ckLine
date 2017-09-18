@@ -43,7 +43,7 @@ $('#jnLine').jnLine();
 	</thead>
 	<tbody>
 		<tr>
-			<td>scgId</td>
+			<td>svgId</td>
 			<td>string</td>
 			<td>jnLine</td>
 		</tr>
