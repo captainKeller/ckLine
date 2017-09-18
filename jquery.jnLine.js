@@ -17,9 +17,10 @@
             lifeTime: 2000,
             width: viewportwidth,
             height: viewportHeight,
+            leftRight: true,
             easing: 'swing',
         }, options);
-        
+
         function creatLine(width, height) {
             var startItemsWidth = Array(0, width);
             var ramdomItemWidth = startItemsWidth[Math.floor(Math.random() * startItemsWidth.length)];
@@ -30,10 +31,29 @@
                 y1 = Math.random() * height,
                 x2,
                 y2 = Math.random() * height;
-            if (ramdomItemWidth === 0) {
-                x2 = width;
+            var randomBool = true;
+            if (settings.leftRight === false) {
+                 randomBool = Math.random() >= 0.5;
+            }
+            if (randomBool == true) {
+                x1 = ramdomItemWidth
+                if (ramdomItemWidth === 0) {
+                    x2 = width;
+                } else {
+                    x2 = 0
+                }
             } else {
-                x2 = 0
+                var range1 = Math.floor(Math.random() * width) + 0;
+                var range2 = Math.floor(Math.random() * width) + 0;
+                x1 = range1;
+                x2 = range2;
+                y1 = ramdomItemHeight;
+                if (ramdomItemHeight === 0) {
+                    y2 = height;
+                } else {
+                    y2 = 0;
+                }
+                
             }
             //var line = document.createElementNS(svgns, 'line');
             var line = document.createElementNS(svgns, 'line');
