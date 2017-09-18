@@ -58,7 +58,7 @@ $('#jnLine').jnLine();
 			<td>SvgHeight</td>
 		</tr>
 		<tr>
-			<td>strokeColo</td>
+			<td>strokeColor</td>
 			<td>string</td>
 			<td>#000</td>
 		</tr>
