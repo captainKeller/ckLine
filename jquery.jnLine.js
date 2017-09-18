@@ -7,8 +7,9 @@
     $.fn.jnLine = function (options) {
         var viewportwidth = this.width(),
             viewportHeight = this.height();
+        var $el = this.attr('id');
         var settings = $.extend({
-            svgId: 'jnLine',
+            svgId: $el,
             strokeColor: "#000",
             strokeWidth: 2,
             animateTime: 1000,
@@ -17,7 +18,7 @@
             lifeTime: 2000,
             width: viewportwidth,
             height: viewportHeight,
-            leftRight: false,
+            leftRight: true,
             easing: 'swing',
         }, options);
 
