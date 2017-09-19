@@ -6,7 +6,11 @@ Generates random svg Lines
 ## Installation
 
 Download package and include `jquery.jnLine.min.js` in your document after including jQuery.
+You can use NPM
 
+```javascript
+npm install jnline
+```
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
