@@ -96,6 +96,7 @@ $('#jnLine').jnLine();
 		</tr>
 	</tbody>
 </table>
+
 ## Functions
 
 To Destroy the plugin
