@@ -4,11 +4,13 @@
  * @license GNU (http://github.com/jonasnickel/jnLine/blob/master/LICENSE)
  */
 (function ($) {
+    'use strict';
     $.fn.jnLine = function (options) {
         var viewportwidth = this.width(),
-            viewportHeight = this.height();
-        var $el = this.attr('id');
-        var settings = $.extend({
+            viewportHeight = this.height(),
+            $el = this.attr('id'),
+            interval = null,
+            settings = $.extend({
             svgId: null,
             strokeColor: "#000",
             strokeWidth: 2,
@@ -19,18 +21,18 @@
             width: viewportwidth,
             height: viewportHeight,
             leftRight: true,
-            easing: 'swing',
+            easing: 'swing'
         }, options);
         $.fn.jnLine.destroy = function () {
             if (interval) {
                 clearInterval(interval);
             }
-        }
+        };
         function creatLine(width, height) {
-            var startItemsWidth = Array(0, width);
-            var ramdomItemWidth = startItemsWidth[Math.floor(Math.random() * startItemsWidth.length)];
-            var startItemsHeight = Array(0, height);
-            var ramdomItemHeight = startItemsHeight[Math.floor(Math.random() * startItemsHeight.length)];
+            var startItemsWidth = Array(0, width),
+                ramdomItemWidth = startItemsWidth[Math.floor(Math.random() * startItemsWidth.length)],
+                startItemsHeight = Array(0, height),
+                ramdomItemHeight = startItemsHeight[Math.floor(Math.random() * startItemsHeight.length)];
             const svgns = "http://www.w3.org/2000/svg";
             var x1 = ramdomItemWidth,
                 y1 = Math.random() * height,
@@ -97,7 +99,7 @@
 
             });
         }
-        var interval = null;
+        
         interval = setInterval(function () {
             creatLine(settings.width, settings.height);
             animate();
