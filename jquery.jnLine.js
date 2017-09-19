@@ -1,5 +1,5 @@
 /*!
- * jnLine.js v1.0.0 (http://github.com/jonasnickel/jnLine)
+ * jnLine.js v1.0.5 (http://github.com/jonasnickel/jnLine)
  * @copyright Jonas Nickel
  * @license GNU (http://github.com/jonasnickel/jnLine/blob/master/LICENSE)
  */
@@ -21,7 +21,11 @@
             leftRight: true,
             easing: 'swing',
         }, options);
-
+        $.fn.jnLine.destroy = function () {
+            if (interval) {
+                clearInterval(interval);
+            }
+        }
         function creatLine(width, height) {
             var startItemsWidth = Array(0, width);
             var ramdomItemWidth = startItemsWidth[Math.floor(Math.random() * startItemsWidth.length)];
@@ -89,7 +93,8 @@
 
             });
         }
-        setInterval(function () {
+        var interval = null;
+        interval = setInterval(function () {
             creatLine(settings.width, settings.height);
             animate();
         }, settings.interval);
