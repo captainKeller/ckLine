@@ -22,7 +22,7 @@ You need an empty SVG Element in your HTML
 
 ### Via JavaScript
 
-To call the jnLine plugin manually, simply select your target element with jQuery and do the following:
+To call the jnLine plugin, select your target element with jQuery and do the following:
 
 ```javascript
 $('#jnLine').jnLine();
@@ -96,3 +96,10 @@ $('#jnLine').jnLine();
 		</tr>
 	</tbody>
 </table>
+## Functions
+
+To Destroy the plugin
+
+```javascript
+$('#jnLine').jnLine.destroy();
+```
