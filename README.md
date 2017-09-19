@@ -42,7 +42,7 @@ $('#jnLine').jnLine();
 		<tr>
 			<td>svgId</td>
 			<td>string</td>
-			<td>jnLine</td>
+			<td>null</td>
 		</tr>
 		<tr>
 			<td>width</td>

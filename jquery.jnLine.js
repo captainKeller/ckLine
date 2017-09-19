@@ -9,7 +9,7 @@
             viewportHeight = this.height();
         var $el = this.attr('id');
         var settings = $.extend({
-            svgId: $el,
+            svgId: null,
             strokeColor: "#000",
             strokeWidth: 2,
             animateTime: 1000,
@@ -72,7 +72,11 @@
             if (settings.motionBlur === true) {
                 line.setAttributeNS(null, 'filter', 'url(#directional-blur)')
             }
-            document.getElementById(settings.svgId).appendChild(line);
+            if (settings.svgId) {
+                document.getElementById(settings.svgId).appendChild(line);
+            } else {
+                document.getElementById($el).appendChild(line);
+            }
             var length = line.getTotalLength();
             line.setAttributeNS(null, 'stroke-dasharray', length);
             line.setAttributeNS(null, 'stroke-dashoffset', length);

@@ -1,0 +1,29 @@
+{
+  "name": "jnline",
+  "version": "1.0.5",
+  "description": "Generate Random Svg Lines and Animate it",
+  "main": "jquery.jnLine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonasnickel/jnLine.git"
+  },
+  "keywords": [
+    "SVG",
+    "Animation",
+    "jQuery",
+    "lines",
+    "canvas"
+  ],
+  "author": "Jonas Nickel",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jonasnickel/jnLine/issues"
+  },
+  "homepage": "https://github.com/jonasnickel/jnLine#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
