@@ -98,6 +98,11 @@ $('#jnLine').jnLine();
 			<td>boolean</td>
 			<td>true</td>
 		</tr>
+		<tr>
+		    <td>animationTimeRange</td>
+		    <td>array Number</td>
+		    <td>[&lt;number&gt;, &lt;number&gt;]</td>
+		</tr>
 	</tbody>
 </table>
 

@@ -1,5 +1,5 @@
 /*!
- * jnLine.js v1.0.5 (http://github.com/jonasnickel/jnLine)
+ * jnLine.js v1.0.6 (http://github.com/jonasnickel/jnLine)
  * @copyright Jonas Nickel
  * @license GNU (http://github.com/jonasnickel/jnLine/blob/master/LICENSE)
  */
@@ -21,7 +21,8 @@
             width: viewportwidth,
             height: viewportHeight,
             leftRight: true,
-            easing: 'swing'
+            easing: 'swing',
+            animationTimeRange: []
         }, options);
         $.fn.jnLine.destroy = function () {
             if (interval) {
@@ -29,11 +30,11 @@
             }
         };
         function creatLine(width, height) {
-            var startItemsWidth = Array(0, width),
+            var startItemsWidth = new Array(0, width),
                 ramdomItemWidth = startItemsWidth[Math.floor(Math.random() * startItemsWidth.length)],
-                startItemsHeight = Array(0, height),
+                startItemsHeight = new Array(0, height),
                 ramdomItemHeight = startItemsHeight[Math.floor(Math.random() * startItemsHeight.length)];
-            const svgns = "http://www.w3.org/2000/svg";
+            var svgns = "http://www.w3.org/2000/svg";
             var x1 = ramdomItemWidth,
                 y1 = Math.random() * height,
                 x2,
@@ -47,7 +48,7 @@
                 if (ramdomItemWidth === 0) {
                     x2 = width;
                 } else {
-                    x2 = 0
+                    x2 = 0;
                 }
             } else {
                 var range1 = Math.floor(Math.random() * width) + 0;
@@ -85,11 +86,16 @@
         }
 
         function animate() {
+            var time = settings.animationTime;
+            if (settings.animationTimeRange) {
+                time = Math.floor(Math.random()*(settings.animationTimeRange[1] - settings.animationTimeRange[0] + 1)+settings.animationTimeRange[0])
+                console.log(time);
+            } 
             jQuery('.line.off').each(function () {
                 jQuery(this).addClass('on').removeClass('off');
                 jQuery(this).animate({
                     'stroke-dashoffset': 0
-                }, settings.animateTime, settings.easing);
+                }, time, settings.easing);
                 var $this = jQuery(this);
                 setTimeout(function () {
                     $this.fadeOut(settings.fadeOutTime, function () {
@@ -99,6 +105,8 @@
 
             });
         }
+        
+        
         
         interval = setInterval(function () {
             creatLine(settings.width, settings.height);
