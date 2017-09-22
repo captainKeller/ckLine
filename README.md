@@ -3,6 +3,8 @@ JnLine.js
 
 Generates random svg Lines
 
+Currently, the plugin is only supported in Chrome it will be fixed in the next version
+
 ## Installation
 
 Download package and include `jquery.jnLine.min.js` in your document after including jQuery.
