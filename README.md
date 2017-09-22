@@ -100,7 +100,7 @@ $('#jnLine').jnLine();
 		</tr>
 		<tr>
 		    <td>animationTimeRange</td>
-		    <td>array Number</td>
+		    <td>array</td>
 		    <td>[&lt;number&gt;, &lt;number&gt;]</td>
 		</tr>
 	</tbody>
