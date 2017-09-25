@@ -19,6 +19,7 @@
         font-family: sans-serif;
         font-size: 18px;
         background: linear-gradient(141deg, #0fb8ad 0%, #76f1ff 51%, #2cb5e8 75%);
+        overflow: hidden;
     }
     #jnLine {
         width: 100%;
@@ -67,7 +68,9 @@
 <script>
     $('#jnLine').jnLine({
         leftRight: false,
-        strokeColor: '#fff',
+        strokeColor: 'rgba(255,255,255,0.4)',
+        interval: 800,
+        animateTime: 1600
     });
 </script>
 </body>
