@@ -1,11 +1,11 @@
 /*!
- * jnLine.js v1.0.7 (http://github.com/jonasnickel/jnLine)
+ * ckLine.js v1.0.7 (http://github.com/captainKeller/ckLine)
  * @copyright Jonas Nickel
- * @license GPL-3.0 (http://github.com/jonasnickel/jnLine/blob/master/LICENSE)
+ * @license GPL-3.0 (http://github.com/captainKeller/ckLine/blob/master/LICENSE)
  */
 (function ($) {
     'use strict';
-    $.fn.jnLine = function (options) {
+    $.fn.ckLine = function (options) {
         var viewportwidth = this.width(),
             viewportHeight = this.height(),
             $el = this.attr('id'),
@@ -24,7 +24,7 @@
                 easing: 'swing',
                 animationTimeRange: null
             }, options);
-        $.fn.jnLine.destroy = function () {
+        $.fn.ckLine.destroy = function () {
             if (interval) {
                 clearInterval(interval);
             }
