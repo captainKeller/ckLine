@@ -3,7 +3,7 @@ ckLine.js
 
 Generates random svg Lines
 
-![](https://preview.ibb.co/hsuSm5/ckLine.gif)
+[![ckLine.gif](https://gifyu.com/images/ckLine.gif)](https://gifyu.com/image/MknS)
 
 Currently, the plugin is only supported in Chrome it will be fixed in the next version
 
