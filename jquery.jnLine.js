@@ -1,7 +1,7 @@
 /*!
- * jnLine.js v1.0.6 (http://github.com/jonasnickel/jnLine)
+ * jnLine.js v1.0.7 (http://github.com/jonasnickel/jnLine)
  * @copyright Jonas Nickel
- * @license GNU (http://github.com/jonasnickel/jnLine/blob/master/LICENSE)
+ * @license GPL-3.0 (http://github.com/jonasnickel/jnLine/blob/master/LICENSE)
  */
 (function ($) {
     'use strict';
@@ -11,19 +11,19 @@
             $el = this.attr('id'),
             interval = null,
             settings = $.extend({
-            svgId: null,
-            strokeColor: "#000",
-            strokeWidth: 2,
-            animateTime: 1000,
-            interval: 600,
-            fadeOutTime: 800,
-            lifeTime: 2000,
-            width: viewportwidth,
-            height: viewportHeight,
-            leftRight: true,
-            easing: 'swing',
-            animationTimeRange: []
-        }, options);
+                svgId: null,
+                strokeColor: "#000",
+                strokeWidth: 2,
+                animateTime: 1000,
+                interval: 600,
+                fadeOutTime: 800,
+                lifeTime: 2000,
+                width: viewportwidth,
+                height: viewportHeight,
+                leftRight: true,
+                easing: 'swing',
+                animationTimeRange: []
+            }, options);
         $.fn.jnLine.destroy = function () {
             if (interval) {
                 clearInterval(interval);
@@ -41,7 +41,7 @@
                 y2 = Math.random() * height;
             var randomBool = true;
             if (settings.leftRight === false) {
-                 randomBool = Math.random() >= 0.5;
+                randomBool = Math.random() >= 0.5;
             }
             if (randomBool == true) {
                 x1 = ramdomItemWidth
@@ -61,7 +61,6 @@
                 } else {
                     y2 = 0;
                 }
-                
             }
             //var line = document.createElementNS(svgns, 'line');
             var line = document.createElementNS(svgns, 'line');
@@ -71,10 +70,7 @@
             line.setAttributeNS(null, 'y2', y2);
             line.setAttributeNS(null, 'stroke-width', settings.strokeWidth);
             line.setAttributeNS(null, 'stroke', settings.strokeColor);
-            line.setAttributeNS(null, 'class', "line off");
-            if (settings.motionBlur === true) {
-                line.setAttributeNS(null, 'filter', 'url(#directional-blur)')
-            }
+            line.setAttributeNS(null, 'class', "line off")
             if (settings.svgId) {
                 document.getElementById(settings.svgId).appendChild(line);
             } else {
@@ -84,13 +80,12 @@
             line.setAttributeNS(null, 'stroke-dasharray', length);
             line.setAttributeNS(null, 'stroke-dashoffset', length);
         }
-
         function animate() {
             var time = settings.animationTime;
             if (settings.animationTimeRange) {
-                time = Math.floor(Math.random()*(settings.animationTimeRange[1] - settings.animationTimeRange[0] + 1)+settings.animationTimeRange[0])
+                time = Math.floor(Math.random() * (settings.animationTimeRange[1] - settings.animationTimeRange[0] + 1) + settings.animationTimeRange[0])
                 //console.log(time);
-            } 
+            }
             jQuery('.line.off').each(function () {
                 jQuery(this).addClass('on').removeClass('off');
                 jQuery(this).animate({
@@ -102,7 +97,6 @@
                         jQuery(this).remove();
                     });
                 }, settings.lifeTime)
-
             });
         }
         
