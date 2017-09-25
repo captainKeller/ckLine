@@ -8,11 +8,6 @@ Currently, the plugin is only supported in Chrome it will be fixed in the next v
 ## Installation
 
 Download package and include `jquery.jnLine.min.js` in your document after including jQuery.
-You can use NPM
-
-```javascript
-npm install jnline
-```
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
