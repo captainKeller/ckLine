@@ -1,4 +1,4 @@
-JnLine.js
+ckLine.js
 ===========
 
 Generates random svg Lines
@@ -7,26 +7,26 @@ Currently, the plugin is only supported in Chrome it will be fixed in the next v
 
 ## Installation
 
-Download package and include `jquery.jnLine.min.js` in your document after including jQuery.
+Download package and include `jquery.ckLine.min.js` in your document after including jQuery.
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/path/to/jquery.jnLine.min.js"></script>
+<script src="/path/to/jquery.ckLine.min.js"></script>
 ```
 
 ## Usage
 
 You need an empty SVG Element in your HTML
 ```html
-<svg id="jnLine" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="ckLine" xmlns="http://www.w3.org/2000/svg"></svg>
 ```
 
 ### Via JavaScript
 
-To call the jnLine plugin, select your target element with jQuery and do the following:
+To call the ckLine plugin, select your target element with jQuery and do the following:
 
 ```javascript
-$('#jnLine').jnLine();
+$('#ckLine').ckLine();
 ```
 
 ## Options
@@ -108,5 +108,5 @@ $('#jnLine').jnLine();
 To Destroy the plugin
 
 ```javascript
-$('#jnLine').jnLine.destroy();
+$('#ckLine').ckLine.destroy();
 ```
