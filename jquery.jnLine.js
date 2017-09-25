@@ -22,7 +22,7 @@
                 height: viewportHeight,
                 leftRight: true,
                 easing: 'swing',
-                animationTimeRange: []
+                animationTimeRange: null
             }, options);
         $.fn.jnLine.destroy = function () {
             if (interval) {
