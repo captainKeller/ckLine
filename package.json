@@ -1,14 +1,14 @@
 {
-  "name": "jnline",
+  "name": "ckline",
   "version": "1.0.6",
   "description": "Generate Random Svg Lines and Animate it",
-  "main": "jquery.jnLine.js",
+  "main": "jquery.ckLine.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonasnickel/jnLine.git"
+    "url": "git+https://github.com/captainKeller/ckLine.git"
   },
   "keywords": [
     "SVG",
@@ -20,9 +20,9 @@
   "author": "Jonas Nickel",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/jonasnickel/jnLine/issues"
+    "url": "https://github.com/captainKeller/ckLine/issues"
   },
-  "homepage": "https://github.com/jonasnickel/jnLine#readme",
+  "homepage": "https://github.com/captainKeller/ckLine#readme",
   "dependencies": {
     "jquery": "^3.2.1"
   }
