@@ -5,8 +5,6 @@ Generates random svg Lines
 
 ![ckLine.gif](https://gifyu.com/images/ckLine.gif)
 
-Currently, the plugin is only supported in Chrome it will be fixed soon.
-
 ## Installation
 
 Download package and include `jquery.ckLine.min.js` in your document after including jQuery.

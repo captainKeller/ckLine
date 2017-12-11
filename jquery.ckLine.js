@@ -1,5 +1,5 @@
 /*!
- * ckLine.js v1.0.7 (http://github.com/captainKeller/ckLine)
+ * ckLine.js v1.0.8 (http://github.com/captainKeller/ckLine)
  * @copyright Jonas Nickel
  * @license GPL-3.0 (http://github.com/captainKeller/ckLine/blob/master/LICENSE)
  */
@@ -63,11 +63,8 @@
                 }
             }
             //var line = document.createElementNS(svgns, 'line');
-            var line = document.createElementNS(svgns, 'line');
-            line.setAttributeNS(null, 'x1', x1);
-            line.setAttributeNS(null, 'y1', y1);
-            line.setAttributeNS(null, 'x2', x2);
-            line.setAttributeNS(null, 'y2', y2);
+            var line = document.createElementNS(svgns, 'path');
+            line.setAttributeNS(null, 'd','M '+ x1+','+y1+' L '+x2+','+y2);
             line.setAttributeNS(null, 'stroke-width', settings.strokeWidth);
             line.setAttributeNS(null, 'stroke', settings.strokeColor);
             line.setAttributeNS(null, 'class', "line off")

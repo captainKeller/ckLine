@@ -1,6 +1,6 @@
 {
   "name": "ckline",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Generate Random Svg Lines and Animate it",
   "main": "jquery.ckLine.js",
   "scripts": {
