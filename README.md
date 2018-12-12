@@ -6,8 +6,6 @@ You can find a demo here
 https://www.jqueryscript.net/animation/Animated-SVG-Lines-jQuery-JnLine.html
 
 
-![ckLine.gif](https://gifyu.com/images/ckLine.gif)
-
 ## Installation
 
 Download package and include `jquery.ckLine.min.js` in your document after including jQuery.
