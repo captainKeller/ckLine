@@ -2,7 +2,9 @@ ckLine.js
 ===========
 
 Generates random svg Lines
-You can find a demo here https://www.jqueryscript.net/animation/Animated-SVG-Lines-jQuery-JnLine.html
+You can find a demo here
+https://www.jqueryscript.net/animation/Animated-SVG-Lines-jQuery-JnLine.html
+
 
 ![ckLine.gif](https://gifyu.com/images/ckLine.gif)
 
